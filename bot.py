@@ -316,7 +316,7 @@ apis = {
         "params": ["gsm"]
     },
 }
-@app.route("/Keneviz/<api_name>")
+@app.route("/keneviz/<api_name>")
 def api_proxy(api_name):
     if api_name not in apis:
         return "API bulunamadı", 404
